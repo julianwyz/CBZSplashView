@@ -65,4 +65,11 @@
     }];
 }
 
+-(void)setIconStartSize:(CGSize)iconStartSize
+{
+    [super setIconStartSize:iconStartSize];
+    self.iconImageView.frame = CGRectMake(0, 0, iconStartSize.width, iconStartSize.height);
+    self.iconImageView.center = self.center;
+}
+
 @end
